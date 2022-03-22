@@ -27,7 +27,6 @@ const Chatroom = () => {
             uid: auth.currentUser?.uid,
             photoURL: auth.currentUser?.photoURL
         })
-        
         setInputValue('')
         dummy.current?.scrollIntoView( {behavior:'smooth'} )
     }
