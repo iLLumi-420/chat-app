@@ -13,16 +13,15 @@ import Chatroom from '../components/Chatroom'
 const Home: NextPage = () => {
 const [user] = useAuthState(auth)
   return (
-    <div className="flex min-h-screen flex-col py-2">
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section>
+      <section className='flex mx-auto flex-col p-2 md:w-3/5 lg:w-2/5 h-screen'>
         { user?<Chatroom />:<SignIn /> }
       </section>
-      
-    </div>
+    </>
   )
 }
 

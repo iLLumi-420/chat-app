@@ -1,9 +1,11 @@
+import Header from "./Header"
 
 const Wrapper = ({children}: any) => {
   return (
-    <div>
+    <main className="">
+        <Header />
         {children}
-    </div>
+    </main>
   )
 }
 
